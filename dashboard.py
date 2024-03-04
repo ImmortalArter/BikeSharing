@@ -38,7 +38,7 @@ import pandas as pd
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
-from scipy.stats import ttest_ind
+
 
 """## **Data Wrangling**
 
@@ -441,28 +441,6 @@ plt.legend()
 plt.show()
 
 """Pada tabel diatas, kita menemukan bahwa pengguna terdaftar (registered) lebih banyak pada hari kerja dalam satu minggu sedangkan pengguna umum meningkat apabila hari libur"""
-
-from scipy.stats import ttest_ind
-
-# Memisahkan data untuk pengguna casual dan terdaftar
-peminjaman_casual = day_df['casual']
-peminjaman_registered = day_df['registered']
-
-# Melakukan uji t
-statistik_t, nilai_p = ttest_ind(peminjaman_casual, peminjaman_registered)
-
-# Menampilkan hasil uji t
-print("Statistik t:", statistik_t)
-print("Nilai p:", nilai_p)
-
-# Menginterpretasikan hasil
-alpha = 0.05
-if nilai_p < alpha:
-    print("Terdapat perbedaan signifikan antara pengguna casual dan terdaftar.")
-else:
-    print("Tidak terdapat perbedaan signifikan antara pengguna casual dan terdaftar.")
-
-"""Uji T diatas juga membuktikan bahwa terdapat perbedaan signifikan antara pengguna casual dan registered
 
 ## Conclusion
 
