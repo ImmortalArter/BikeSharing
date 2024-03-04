@@ -443,7 +443,7 @@ plt.show()
 """Pada tabel diatas, kita menemukan bahwa pengguna terdaftar (registered) lebih banyak pada hari kerja dalam satu minggu sedangkan pengguna umum meningkat apabila hari libur"""
 
 
-"""Uji T diatas juga membuktikan bahwa terdapat perbedaan signifikan antara pengguna casual dan registered
+"""
 
 ## Conclusion
 
